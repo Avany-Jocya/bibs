@@ -31,7 +31,7 @@
     </tr>
 </table>
 
-<a href="#" class="btn btn-success d-block">Ajouter un livre</a>
+<a href="Livre.class.php" class="btn btn-success d-block">Ajouter un livre</a>
 <?php
 $titre = "Bibliothèque d'Avany";
 $content = ob_get_clean();
