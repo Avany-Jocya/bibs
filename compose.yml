@@ -18,10 +18,12 @@ services:
       - '8080:80'
     volumes:
       - ./www/:/var/www/html
-      
+
   #service mariadb
   mariadb:
     image: mariadb:11.2
+    ports:
+      - '3308:3306'
     env_file:
       - .env
     volumes:

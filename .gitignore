@@ -3,3 +3,6 @@
 
 #Env File
 .env
+
+#database
+/database
