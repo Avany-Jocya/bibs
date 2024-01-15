@@ -1,7 +1,14 @@
 <?php 
+ob_start()
+?>
 
-$content="coucou";
+<h1> Ma page d'accueil</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita, tenetur libero ipsam repudiandae voluptates a necessitatibus ab optio vero facere animi atque magni et? Mollitia sit nemo beatae hic?</p>
 
-require_once"template.php" 
+<?php
+
+//buffer restitué
+$content = ob_get_clean();
+require_once "template.php"
 
 ?>
