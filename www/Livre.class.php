@@ -1,44 +1,45 @@
 <?php
-class Livre {
-  
-    private array $image;
+class livre
+{
+    private int $id;
     private string $titre;
-    private int $nbPages;
+    private string $image;
+    private int $nbDePages;
 
-    public function __construct(array $image, string $titre, int $nbPages)
+    public function __construct(int $id, string $titre,string $image, int $nbDePages)
     {
-        $this->image = $image;
+        $this->id = $id;
         $this->titre = $titre;
-        $this->nbPages = $nbPages;
-      
+        $this->image = $image;
+        $this->nbDePages = $nbDePages;
     }
-    public function __toString() {
-        $msg = "image : " . $this->image . ".</br>
-              Titre : " . $this->titre . ".</br>
-              Nombre de pages : " . $this->nbPages . ".</br>";
-        
-       
+    public function getId(): int {
+        return $this->id;
     }
 
-    public function getimage(){
-        return $this->image;
+    public function setId(int $id): self {
+        $this->id = $id;
+        return $this;
     }
-    public function setimage($newimage){
-        $this->image = $newimage;
-    }
-    public function getTitre(){
+    public function getTitre(): string {
         return $this->titre;
     }
-    public function setTitre($newTitre){
-        $this->titre = $newTitre;
+    public function setTitre(string $titre): self {
+        $this->titre = $titre;
+        return $this;
     }
-
-    public function getNbPages(){
-        return $this->nbPages;
+    public function getImage(): string {
+        return $this->image;
     }
-    public function setNbPages($newNbPage){
-        $this->nbPages = $newNbPage;
+    public function setImage(string $image): self {
+        $this->image = $image;
+        return $this;
     }
-
+    public function getNbDePages(): int {
+        return $this->nbDePages;
+    }
+    public function setNbDePages(int $nbDePages): self {
+        $this->nbDePages = $nbDePages;
+        return $this;
+    }
 }
-?>
