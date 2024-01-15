@@ -5,6 +5,7 @@ class livre
     private string $titre;
     private string $image;
     private int $nbDePages;
+    // public static array $livres; //tableau de livres
 
     public function __construct(int $id, string $titre,string $image, int $nbDePages)
     {
@@ -12,6 +13,7 @@ class livre
         $this->titre = $titre;
         $this->image = $image;
         $this->nbDePages = $nbDePages;
+        // self::$livres[]=$this;
     }
     public function getId(): int {
         return $this->id;

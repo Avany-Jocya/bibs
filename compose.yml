@@ -16,3 +16,13 @@ services:
       - '8080:80'
     volumes:
       - ./www/:/var/www/html
+  
+  mariadb:
+    image: mariadb:11.2
+    env_file:
+      - .env
+    volumes:
+      - bibliodatabase:/var/lib/mysql
+
+volumes:
+  bibliodatabase:
