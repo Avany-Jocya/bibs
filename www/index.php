@@ -8,6 +8,7 @@ ob_start()
 <?php
 
 //buffer restitué
+$titre = "Bibliothèque d'Avany";
 $content = ob_get_clean();
 require_once "template.php"
 
