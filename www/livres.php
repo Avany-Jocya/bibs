@@ -1,4 +1,9 @@
 <?php
+
+require "ConnexionManager.class.php";
+$connexionManager = new ConnexionManager;
+$connexionManager->setConnexionBdd();
+
 require_once "Livre.class.php";
 $livre1 =new Livre(1,"Heartbreak","livre4.jpg", 20);
 $livre2 =new Livre(2,"When i look at you","livre5.jpg", 13);
