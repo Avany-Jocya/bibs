@@ -26,7 +26,10 @@ $livreManager->chargementLivres();
 ?>
 
 
+
+
 <?php ob_start() ?>
+
 <table class="table table-center">
     <tr class="table-dark">
         <th>Image</th>
@@ -52,4 +55,4 @@ foreach($livresEnCours as $livre) : ?>
 <?php
 $titre = "Bibliothèque d'Avany";
 $content = ob_get_clean();
-require_once "template.php";
+require_once "template.view.php";

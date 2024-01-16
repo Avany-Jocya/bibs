@@ -22,7 +22,13 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="livres.php">Livre</a>
+          <a class="nav-link" href='livres'>Livre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href='a-propos'>A propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href='contact'>Contact</a>
         </li>
         
         
