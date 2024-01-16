@@ -38,7 +38,7 @@ $livresEnCours = $livreManager->getLivres();
 
 foreach($livresEnCours as $livre) : ?>
     <tr>
-        <td class="align-middle"><img src="public/images/<?php echo $livre->getImage();?>" height="150px" alt="Livre pour <?php echo $livre->getTitre();?>" ></td>
+        <td class="align-middle"><a href="https://www.wattpad.com/user/Asile-Avany"><img src="public/images/<?php echo $livre->getImage();?>" height="150px" alt="Livre pour <?php echo $livre->getTitre();?>" ></a></td>
         <td class="align-middle"><?php echo $livre->getTitre();?></td>
         <td class="align-middle"><?php echo $livre->getNbDePages();?></td>
         <td class="align-middle"><a href="#" class="btn btn-warning">Modifier</a></td>
