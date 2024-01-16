@@ -3,3 +3,9 @@
 
 #Env File
 .env
+
+#database
+/database
+
+#htaccess
+.htaccess
