@@ -1,7 +1,5 @@
 <?php
-
-//Modèle de classe pour la connexion BDD
- class ConnexionManager {
+abstract class ConnexionManager {
      private static $connexion;
 
      public static function setConnexionBdd(){
@@ -9,8 +7,11 @@
         self::$connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
      }
      
-     protected function getConnexionBdd(){
-
+     protected function getConnexionBdd():object{
+        if(self::$connexion === null){
+            self::setConnexionBdd();
+        }
+        return self::$connexion;
      }
 
 

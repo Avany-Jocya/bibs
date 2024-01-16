@@ -1,25 +1,26 @@
 <?php
 
-require "ConnexionManager.class.php";
-$connexionManager = new ConnexionManager;
-$connexionManager->setConnexionBdd();
+// require "ConnexionManager.class.php";
+// $connexionManager = new ConnexionManager;
+// $connexionManager->setConnexionBdd();
 
 require_once "Livre.class.php";
-$livre1 =new Livre(1,"Heartbreak","livre4.jpg", 20);
-$livre2 =new Livre(2,"When i look at you","livre5.jpg", 13);
-$livre3 =new Livre(3,"Fusionnelle","livre6.jpg", 14);
-$livre4 =new Livre(4,"La casa de Partouz","livre1.jpg", 20);
-$livre5 =new Livre(5,"Red Hair magik","livre2.jpg", 20);
+// $livre1 =new Livre(1,"Heartbreak","livre4.jpg", 20);
+// $livre2 =new Livre(2,"When i look at you","livre5.jpg", 13);
+// $livre3 =new Livre(3,"Fusionnelle","livre6.jpg", 14);
+// $livre4 =new Livre(4,"La casa de Partouz","livre1.jpg", 20);
+// $livre5 =new Livre(5,"Red Hair magik","livre2.jpg", 20);
 
 // $livres = [$livre1, $livre2, $livre3];
 
 require_once "LivreManager.class.php";
 $livreManager = new LivreManager;
-$livreManager->ajouterLivre($livre1);
-$livreManager->ajouterLivre($livre2);
-$livreManager->ajouterLivre($livre3);
-$livreManager->ajouterLivre($livre4);
-$livreManager->ajouterLivre($livre5)
+$livreManager->chargementLivres();
+// $livreManager->ajouterLivre($livre1);
+// $livreManager->ajouterLivre($livre2);
+// $livreManager->ajouterLivre($livre3);
+// $livreManager->ajouterLivre($livre4);
+// $livreManager->ajouterLivre($livre5)
 
 
 ?>
