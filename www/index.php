@@ -1,15 +1,19 @@
 <?php 
-ob_start()
-?>
 
-<h1> Ma page d'accueil</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita, tenetur libero ipsam repudiandae voluptates a necessitatibus ab optio vero facere animi atque magni et? Mollitia sit nemo beatae hic?</p>
+if (empty($_GET['page'])){
+    require "view/accueil.view.php";
+} else {
+    switch ($_GET['page']){
+        case 'accueil':
+            require "views/accueil.view.php";
+            break;
+    }
+}
 
-<?php
 
-//buffer restitué
-$titre = "Bibliothèque d'Avany";
-$content = ob_get_clean();
-require_once "template.php"
 
-?>
+
+
+
+
+ 
